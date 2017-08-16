@@ -18,6 +18,7 @@ Note:
 This was created using the GOG release of the game, which ships the following exe files:
 
 9a232dcc2c164648cff20c414c1f9698  i76.exe
+
 28b8ae276e88f4ffb13f17df159f09dc  nitro.exe
 
 (!! the patcher doesn't check the exe before patching )
