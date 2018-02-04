@@ -4,8 +4,8 @@ CFLAGS=-std=c99 -Wall -g
 PATCHER=patch_i76.exe \
 	patch_nitro.exe
 
-PATCHED_EXE=i76_25fps.exe \
-	    nitro_25fps.exe
+PATCHED_EXE=i76_24fps.exe \
+	    nitro_24fps.exe
 
 all: delay.S $(PATCHER)
 
@@ -37,9 +37,9 @@ patch_nitro.o: patch.s
 
 
 # run patch
-i76_25fps.exe: i76.exe patch_i76.exe
+i76_24fps.exe: i76.exe patch_i76.exe
 	wine patch_i76.exe i76.exe $@
 
-nitro_25fps.exe: nitro.exe patch_nitro.exe
+nitro_24fps.exe: nitro.exe patch_nitro.exe
 	wine patch_nitro.exe nitro.exe $@
 

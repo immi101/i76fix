@@ -43,7 +43,7 @@
 
 ##### common definitions ##########
 
-.set TargetDelay, 40   # 30fps: 1/30 > ~33.333ms per frame, 25fps: 1/25 > 40 ms per frame
+.set TargetDelay, 42   # 30fps: 1/30 = ~33.333ms per frame, 25fps: 1/25 => 40ms, 24fps: => ~41,66ms
 
 /* "allocated" in patch2 */
 .set pSleep, PATCH2_OFS + 0x2C
